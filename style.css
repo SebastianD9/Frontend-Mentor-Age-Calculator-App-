@@ -1,0 +1,157 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Light-grey);
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: var(--White);
+    width: 340px;
+    border-radius: 20px 20px 100px 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text{
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--Smokey-grey);
+    text-transform: uppercase;
+}
+.inputs input{
+    font-weight: 1000;
+    margin-top: 5px;
+    padding: 10px 5px;
+    outline: none;
+    width: 90px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grey);
+}
+.inputs input:focus{
+    border-color: var(--Purple);
+}
+.icon {
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   height: 40px;
+   flex-direction: column;
+}
+.icon hr{
+    width: 100%;
+    height: 1px;
+    background: var(--Light-grey);
+}
+button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: var(--Purple);
+  cursor: pointer;
+  transition: background-color .3s;
+}
+button img{
+    scale: 0.6;
+}
+button:hover{
+    background-color: var(--Off-black);
+}
+.results{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+span {
+    color: var(--Purple);
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 1000;
+    margin-bottom: -20px;
+}
+.error {
+    margin-top: 5px;
+    font-size: 8px;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+.Errors{
+    color: var(--Light-red);
+}
+.Errors .text {
+    color: var(--Light-red);
+}
+.Errors input {
+    border-color: var(--Light-red);
+}
+
+footer{
+    position: fixed;
+    bottom: 5px;
+}
+
+@media (min-width: 888px) {
+    button {
+        position: relative;
+        width: 65px;
+    }
+    .icon {
+        margin-top: 10px;
+        flex-direction: row;
+        margin-bottom: -20px;
+    }
+    .container {
+        width: 500px;
+        padding: 50px 40px;
+        scale: 1.3;
+    }
+    .inputs{
+        justify-content: flex-start;
+    }
+    .inputs input {
+        width: 100px;
+        margin-right: 20px;
+        padding: 10px 10px;
+    }
+    h1{
+        
+        font-size: 60px;
+    }
+}
