@@ -103,7 +103,7 @@ span {
 h1{
     font-size: 50px;
     font-weight: 1000;
-    margin-bottom: -20px;
+    margin-bottom: -5px;
 }
 .error {
     margin-top: 5px;
@@ -151,7 +151,7 @@ footer{
         padding: 10px 10px;
     }
     h1{
-        margin-bottom: -5px;
+        margin-bottom: -15px;
         font-size: 60px;
     }
 }
